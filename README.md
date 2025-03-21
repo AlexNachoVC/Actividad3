@@ -7,7 +7,7 @@ Semana Tec "Herramientas Computacionales: El Arte de la Programación". Profesor
 
 El siguiente código utiliza la librería freegames, desde un entorno virtual para correr todo sin problemas de versiones.
 
-El código fuente recrea el videojuego Paint (una tortuga crea figuras en la pantalla según se haga clicks y teclas específicas para los colores). El juego fue tomado desde la siguiente liga: https://grantjenks.com/docs/freegames/paint.html
+El código fuente recrea el videojuego Pacman. El juego fue tomado desde la siguiente liga: https://grantjenks.com/docs/freegames/pacman.html
 
 El integrante 1 creó el repositorio original con el videojuego copiado y el integrante 2 hizo fork desde Github para trabajar en otro repositorio copia.
 
