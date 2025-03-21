@@ -26,6 +26,7 @@ ghosts = [
     [vector(100, -160), vector(-5, 0)],
 ]
 # fmt: off
+# se modifico el mapa
 tiles = [
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0,
@@ -129,18 +130,19 @@ def move():
     dot(20, 'yellow')
 
     for point, course in ghosts:
-        
+        # se incremento la velocidad de los fantasmas
         options = [
             vector(10, 0),
             vector(-10, 0),
             vector(0, 10),
             vector(0, -10),
         ]
-        
+
+        # Filtrar opciones válidas
         valid_moves = [option for option in options if valid(point + option)]
         
         if valid_moves:
-            
+            # Elegir la dirección que minimice la distancia a Pac-Man
             best_move = min(valid_moves, key=lambda move: abs((point + move) - pacman))
             course.x = best_move.x
             course.y = best_move.y
